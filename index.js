@@ -17,12 +17,12 @@ const projects = {
         "link":"https://portfolio.thecreatorgrey.site/space-climb-reborn"
     },
 
-    "Mine Thing":{
+    "Voxelantis":{
         "year":"2023",
         "banner":"banners/mine thing.png",
         "tagline":"A simple Minecraft clone",
         "description":"A simple Minecraft clone.",
-        "link":"https://portfolio.thecreatorgrey.site/mine-thing"
+        "link":"https://portfolio.thecreatorgrey.site/voxelantis"
     },
 
     "Kodiak WE":{
