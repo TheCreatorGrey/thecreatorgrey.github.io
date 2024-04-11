@@ -3,9 +3,9 @@ const board = document.getElementById("board");
 const projects = {
     "This Website":{
         "year":"2024",
-        "banner":"banners/hamper.png",
-        "tagline":"Not much more to say here",
-        "description":"Not much more to say here",
+        "banner":"banners/ws.png",
+        "tagline":"",
+        "description":"",
         "link":"https://portfolio.thecreatorgrey.site"
     },
 
