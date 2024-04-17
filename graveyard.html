@@ -10,16 +10,18 @@
     <link rel="icon" href="medium-transparent.png">
   </head>
   <body>
-    <canvas id="backdrop"></canvas>
+    <div style="width: 100%; height: 100%; position: absolute; z-index: -5; top:0; left:0; background-image: url(./tile.png); background-size: 100px;">
+
+    </div>
 
     <div id="board" style="height: 100%; width: 100%;">
       <div style="width: 100%; background-color: rgba(15, 15, 15, 1);">
         <div style="padding: 20px;">
           <span style="font-size: 25px;">
-            Hello, I'm Grey.
+            The hall of dead projects
           </span><br>
           <span style="font-size: 15px;">
-            Here's some of my work:
+            Pay your respects here
           </span>
         </div>
       </div>
@@ -28,11 +30,8 @@
       <div id="cards">
 
       </div>
-
-      <span>See the <a href="./graveyard.html">graveyard</a></span>
     </div>
 
 	<script src="index.js"></script>
-    <script src="backdrop.js"></script>
   </body>
 </html>

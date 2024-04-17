@@ -1,14 +1,6 @@
 const board = document.getElementById("board");
 
 const projects = {
-    "This Website":{
-        "year":"2024",
-        "banner":"banners/ws.png",
-        "tagline":"",
-        "description":"",
-        "link":"https://portfolio.thecreatorgrey.site"
-    },
-
     "Space Climb Reborn":{
         "year":"2022",
         "banner":"banners/space climb.png",
@@ -31,24 +23,60 @@ const projects = {
         "tagline":"A web port of the Kodiak engine",
         "description":"A web port of the Kodiak engine.",
         "link":"https://portfolio.thecreatorgrey.site/kodiak/studio"
-    },
-
-    "Kodiak":{
-        "year":"2023",
-        "banner":"banners/kodiak.png",
-        "tagline":"currently unavailable",
-        "description":"A game engine built with Ursina",
-        "link":null
     }
 }
 
-console.log(projects)
+const graveyard = {
+    "LibreRooms":{
+        "year":"2023",
+        "banner":"banners/graveyard/LR.png",
+        "tagline":"An online instant-messaging service. Deleted in a panic of getting hacked."
+    },
 
-for (p in projects) {
-    data = projects[p];
+    "Kodiak":{
+        "year":"2022",
+        "banner":"banners/graveyard/kodiak.png",
+        "tagline":"The original Kodiak. Became too messy to develop."
+    },
 
-    board.innerHTML += `
-    <span class="card" onclick="if ('${data.link}' !== 'null') {window.open('${data.link}', '_blank').focus()}">
+    "The Prisoner's Descent":{
+        "year":"2022",
+        "banner":"banners/graveyard/tpd.png",
+        "tagline":"A psycological horror game. Couldn't create a compelling plotline."
+    },
+
+    "Spring Animator":{
+        "year":"2022",
+        "banner":"banners/none.png",
+        "tagline":"A 2D animation software. Lost interest."
+    },
+
+    "Ultimate Sandbox":{
+        "year":"2021",
+        "banner":"banners/none.png",
+        "tagline":"An overly complicated sandbox game. Death by foul, amateur code."
+    },
+}
+
+function openProject(obj) {
+    if (obj.link) {
+        window.open(obj.link, '_blank').focus()
+    }
+}
+
+let cards;
+if (window.location.pathname === '/graveyard.html') {
+    cards = graveyard
+} else {
+    cards = projects
+}
+console.log(window.location)
+
+for (p in cards) {
+    data = cards[p];
+
+    document.getElementById("cards").innerHTML += `
+    <span class="card" onclick="if (${data}.link) {window.open('${data.link}', '_blank').focus(}">
         <img src="${data.banner}" alt="banner">
         <span>${p} (${data.year})</span><br>
         <span style="font-size: 15px">${data.tagline}</span>
