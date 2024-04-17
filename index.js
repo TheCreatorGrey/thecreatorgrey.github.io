@@ -1,20 +1,12 @@
 const board = document.getElementById("board");
 
 const projects = {
-    "Space Climb Reborn":{
-        "year":"2022",
-        "banner":"banners/space climb.png",
-        "tagline":"A randomly-generated strategy game",
-        "description":"A randomly-generated strategy game.",
-        "link":"https://portfolio.thecreatorgrey.site/space-climb-reborn"
-    },
-
-    "Voxelantis":{
-        "year":"2023",
-        "banner":"banners/mine thing.png",
-        "tagline":"A simple Minecraft clone",
-        "description":"A simple Minecraft clone.",
-        "link":"https://portfolio.thecreatorgrey.site/voxelantis"
+    "This Website":{
+        "year":"2024",
+        "banner":"banners/ws.png",
+        "tagline":"_",
+        "description":"",
+        "link":"https://portfolio.thecreatorgrey.site"
     },
 
     "Kodiak WE":{
@@ -23,7 +15,23 @@ const projects = {
         "tagline":"A web port of the Kodiak engine",
         "description":"A web port of the Kodiak engine.",
         "link":"https://portfolio.thecreatorgrey.site/kodiak/studio"
-    }
+    },
+
+    "Voxelantis":{
+        "year":"2023",
+        "banner":"banners/mt.png",
+        "tagline":"A simple Minecraft clone",
+        "description":"A simple Minecraft clone.",
+        "link":"https://portfolio.thecreatorgrey.site/voxelantis"
+    },
+
+    "Space Climb Reborn":{
+        "year":"2022",
+        "banner":"banners/space climb.png",
+        "tagline":"A randomly-generated strategy game",
+        "description":"A randomly-generated strategy game.",
+        "link":"https://portfolio.thecreatorgrey.site/space-climb-reborn"
+    },
 }
 
 const graveyard = {
