@@ -38,31 +38,37 @@ const graveyard = {
     "LibreRooms":{
         "year":"2023",
         "banner":"banners/graveyard/LR.png",
-        "tagline":"An online instant-messaging service. Deleted in a panic of getting hacked."
+        "tagline":"An online instant-messaging service."
     },
 
     "Kodiak":{
         "year":"2022",
         "banner":"banners/graveyard/kodiak.png",
-        "tagline":"The original Kodiak. Became too messy to develop."
+        "tagline":"The original Kodiak."
     },
 
     "The Prisoner's Descent":{
         "year":"2022",
         "banner":"banners/graveyard/tpd.png",
-        "tagline":"A psycological horror game. Couldn't create a compelling plotline."
+        "tagline":"A psycological horror game."
     },
 
     "Spring Animator":{
         "year":"2022",
         "banner":"banners/none.png",
-        "tagline":"A 2D animation software. Lost interest."
+        "tagline":"A 2D animation software."
+    },
+
+    "Society Simulator":{
+        "year":"2021",
+        "banner":"banners/none.png",
+        "tagline":"A 2D multiplayer open world sandbox game."
     },
 
     "Ultimate Sandbox":{
         "year":"2021",
         "banner":"banners/none.png",
-        "tagline":"An overly complicated sandbox game. Death by foul, amateur code."
+        "tagline":"An overly complicated sandbox game."
     },
 }
 
