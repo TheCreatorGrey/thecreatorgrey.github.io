@@ -6,7 +6,7 @@ const projects = {
         "banner":"banners/ws.png",
         "tagline":"_",
         "description":"",
-        "link":"https://portfolio.thecreatorgrey.site"
+        "link":"https://thecreatorgrey.com"
     },
 
     "Kodiak WE":{
@@ -14,7 +14,7 @@ const projects = {
         "banner":"banners/kodiak WE.png",
         "tagline":"A web port of the Kodiak engine",
         "description":"A web port of the Kodiak engine.",
-        "link":"https://portfolio.thecreatorgrey.site/kodiak/studio"
+        "link":"https://thecreatorgrey.com/kodiak/studio"
     },
 
     "Voxelantis":{
@@ -22,7 +22,7 @@ const projects = {
         "banner":"banners/mt.png",
         "tagline":"A simple Minecraft clone",
         "description":"A simple Minecraft clone.",
-        "link":"https://portfolio.thecreatorgrey.site/voxelantis"
+        "link":"https://thecreatorgrey.com/voxelantis"
     },
 
     "Space Climb Reborn":{
@@ -30,7 +30,7 @@ const projects = {
         "banner":"banners/space climb.png",
         "tagline":"A randomly-generated strategy game",
         "description":"A randomly-generated strategy game.",
-        "link":"https://portfolio.thecreatorgrey.site/space-climb-reborn"
+        "link":"https://thecreatorgrey.com/space-climb-reborn"
     },
 }
 
@@ -90,7 +90,7 @@ for (p in cards) {
     data = cards[p];
 
     document.getElementById("cards").innerHTML += `
-    <span class="card" onclick="if (${data}.link) {window.open('${data.link}', '_blank').focus(}">
+    <span class="card" onclick="if (${data.link !== undefined}) {window.open('${data.link}', '_blank').focus()}">
         <img src="${data.banner}" alt="banner">
         <span>${p} (${data.year})</span><br>
         <span style="font-size: 15px">${data.tagline}</span>
