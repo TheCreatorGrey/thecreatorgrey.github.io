@@ -9,6 +9,22 @@ const projects = {
         "link":"https://thecreatorgrey.com"
     },
 
+    "Word Generator for Conlangs":{
+        "year":"2024",
+        "banner":"banners/wgfc.png",
+        "tagline":"A simple word generator",
+        "description":"A simple word generator",
+        "link":"https://thecreatorgrey.com/wordgen/"
+    },
+
+    "Junction":{
+        "year":"2024",
+        "banner":"banners/junction.png",
+        "tagline":"A specialized router for personal projects",
+        "description":"A specialized router for personal projects",
+        "link":"https://github.com/TheCreatorGrey/junction"
+    },
+
     "Kodiak WE":{
         "year":"2024",
         "banner":"banners/kodiak WE.png",
@@ -38,37 +54,37 @@ const graveyard = {
     "LibreRooms":{
         "year":"2023",
         "banner":"banners/graveyard/LR.png",
-        "tagline":"An online instant-messaging service."
+        "tagline":"An online instant-messaging service"
     },
 
     "Kodiak":{
         "year":"2022",
         "banner":"banners/graveyard/kodiak.png",
-        "tagline":"The original Kodiak."
+        "tagline":"The original Kodiak"
     },
 
     "The Prisoner's Descent":{
         "year":"2022",
         "banner":"banners/graveyard/tpd.png",
-        "tagline":"A psycological horror game."
+        "tagline":"A psycological horror game"
     },
 
     "Spring Animator":{
         "year":"2022",
         "banner":"banners/none.png",
-        "tagline":"A 2D animation software."
+        "tagline":"A 2D animation software"
     },
 
     "Society Simulator":{
         "year":"2021",
         "banner":"banners/none.png",
-        "tagline":"A 2D multiplayer open world sandbox game."
+        "tagline":"A 2D multiplayer open world sandbox game"
     },
 
     "Ultimate Sandbox":{
         "year":"2021",
         "banner":"banners/none.png",
-        "tagline":"An overly complicated sandbox game."
+        "tagline":"A 3D sandbox game"
     },
 }
 
