@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="400"
+   viewBox="0 0 158.75 105.83333"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#440082;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       id="rect1-7-8"
+       width="186.9668"
+       height="132.60313"
+       x="-14.108404"
+       y="-13.384895" />
+    <rect
+       style="fill:#5600a4;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       id="rect1"
+       width="93.483398"
+       height="66.301567"
+       x="-14.108405"
+       y="-13.384896" />
+    <rect
+       style="fill:#5600a4;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       id="rect1-7"
+       width="93.483398"
+       height="66.301567"
+       x="79.374992"
+       y="52.916672" />
+    <text
+       xml:space="preserve"
+       style="font-size:19.1326px;font-family:'Nachlieli CLM';-inkscape-font-specification:'Nachlieli CLM, Normal';fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       x="35.773724"
+       y="59.112827"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0"
+         x="35.773724"
+         y="59.112827">No Banner</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.30445px;font-family:'Nachlieli CLM';-inkscape-font-specification:'Nachlieli CLM, Normal';fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:bevel;paint-order:stroke fill markers"
+       x="58.254547"
+       y="69.009224"
+       id="text1-6"><tspan
+         sodipodi:role="line"
+         id="tspan1-6"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0"
+         x="58.254547"
+         y="69.009224">(At least for now...)</tspan></text>
+  </g>
+</svg>

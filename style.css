@@ -4,6 +4,7 @@ body {
     background-color: rgb(15, 15, 15);
     color: white;
     font-family: Arial;
+    user-select: none;
 }
 
 html, body {
@@ -19,6 +20,13 @@ html, body {
     height: 100%;
     z-index: -5;
     filter: blur(5px);
+}
+
+.textBlock {
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card {
@@ -78,4 +86,19 @@ html, body {
 .social-media-button {
     width: 50px;
     cursor: pointer;
+}
+
+
+
+a:link {
+    color: rgb(147, 82, 223);
+}
+a:visited {
+    color: rgb(119, 0, 255);
+}
+a:hover {
+    color: rgb(105, 115, 255);
+}
+a:active {
+    color: rgb(234, 0, 255);
 }
