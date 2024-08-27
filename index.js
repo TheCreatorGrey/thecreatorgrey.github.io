@@ -5,60 +5,6 @@ const board = document.getElementById("board");
 
 const projects = [
     {
-        "name":"Plus and Minus",
-        "start":[4, 14, 2020],
-        "release":[4, 14, 2020],
-        "banner":"missing.svg",
-        "tagline":"A platformer?",
-        "description":"A platformer?",
-        "link":"/archive/plus-and-minus-1.html"
-    },
-
-    {
-        "name":"House Builder",
-        "start":[10, 14, 2020],
-        "release":[10, 14, 2020],
-        "banner":"/archive/house-builder.png",
-        "tagline":"A top-down house building game",
-        "description":"A top-down house building game",
-        "link":"/archive/house-builder.html"
-    },
-
-    {
-        "name":"Pottery Simulator 3D",
-        "start":[2, 18, 2021],
-        "release":[2, 18, 2021],
-        "banner":"/archive/pottery-simulator.png",
-        "tagline":"A pottery simulation game",
-        "description":"A pottery simulation game",
-        "link":"/archive/pottery-simulator-3d.html"
-    },
-
-    {
-        "name":"Party Simulator",
-        "start":[6, 4, 2021],
-        "release":[6, 4, 2021],
-        "banner":"/archive/party-simulator.png",
-        "tagline":"A (now defunct) social MMO",
-        "description":"A (now defunct) social MMO",
-        "link":"/archive/party-simulator.html"
-    },
-
-    {
-        "name":"Paint in 3D",
-        "start":[9, 4, 2021],
-        "release":[9, 4, 2021],
-        "banner":"missing.svg",
-        "tagline":"A 3D painting thing",
-        "description":"A 3D painting thing",
-        "link":"/archive/paint-in-3d.html"
-    },
-
-
-
-
-
-    {
         "name":"Space Climb Reborn",
         "start":[1, 1, 2022],
         "release":[1, 1, 2022],
@@ -142,14 +88,7 @@ for (data of sorted) {
         releaseYear = "Unreleased"
     }
 
-    let area
-    if (releaseYear < 2022) {
-        area = document.getElementById("cards-archive")
-    } else {
-        area = document.getElementById("cards")
-    }
-
-    area.innerHTML += `
+    document.getElementById("cards").innerHTML += `
     <span class="card" onclick="if (${data.link !== null}) {window.open('${data.link}', '_blank').focus()}">
         <img src="banners/${data.banner}" alt="banner">
         <span>${data.name} (${releaseYear})</span><br>
