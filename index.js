@@ -15,6 +15,16 @@ const projects = [
     },
 
     {
+        "name":"Ruby Soundboard",
+        "start":[1, 1, 2023],
+        "release":[1, 1, 2023],
+        "banner":"rs.png",
+        "tagline":"A browser based soundboard",
+        "description":"A browser based soundboard",
+        "link":"https://thecreatorgrey.com/ruby-soundboard"
+    },
+
+    {
         "name":"Voxelantis",
         "start":[8, 29, 2023],
         "release":[8, 31, 2023],
