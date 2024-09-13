@@ -29,29 +29,19 @@ const projects = [
         "start":[8, 29, 2023],
         "release":[8, 31, 2023],
         "banner":"mt.png",
-        "tagline":"A voxel sandbox game",
-        "description":"A voxel sandbox game",
+        "tagline":"A voxel based sandbox game",
+        "description":"A voxel based sandbox game",
         "link":"https://thecreatorgrey.com/voxelantis"
     },
 
     {
-        "name":"Kodiak WE",
+        "name":"Kodiak",
         "start":[9, 18, 2023],
         "release":[12, 14, 2023],
         "banner":"kodiak WE.png",
-        "tagline":"A web port of the Kodiak engine",
-        "description":"A web port of the Kodiak game engine",
+        "tagline":"A WebGL game creation tool and level editor",
+        "description":"A WebGL game creation tool and level editor",
         "link":"https://thecreatorgrey.com/kodiak/studio"
-    },
-
-    {
-        "name":"Junction",
-        "start":[7, 24, 2024],
-        "release":null,
-        "banner":"junction.png",
-        "tagline":"A specialized router for personal projects",
-        "description":"A specialized router for personal projects",
-        "link":"https://github.com/TheCreatorGrey/junction"
     },
 
     {
@@ -72,6 +62,16 @@ const projects = [
         "tagline":"A simple autoclicker",
         "description":"A simple autoclicker",
         "link":"https://github.com/TheCreatorGrey/Clykr"
+    },
+
+    {
+        "name":"Raster Online",
+        "start":[9, 10, 2024],
+        "release":[9, 13, 2024],
+        "banner":"missing.svg",
+        "tagline":"An online pixel editor",
+        "description":"An online pixel editor",
+        "link":"https://thecreatorgrey.com/raster-online/"
     },
 ]
 
