@@ -29,6 +29,8 @@ html, body {
     transform: translateX(-50%);
 }
 
+
+
 .card {
     width: 500px;
     max-width: 90%;
@@ -55,6 +57,8 @@ html, body {
 .card span {
     font-size: 20px;
 }
+
+
 
 #board {
     overflow-y: scroll;

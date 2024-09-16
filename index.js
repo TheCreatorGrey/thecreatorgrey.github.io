@@ -1,77 +1,109 @@
 const board = document.getElementById("board");
+const cardArea = document.getElementById("cards");
 
 // date format is month, day, year
 // dates before 8/26 may not be accurate
 
+
+// name: Displayed name of project
+// id: A URL and filename safe version of the project's name
+// startDate: Month, day and year the project was started
+// releaseDate: (if any) Month, day and year the project was released
+// endDate: (if any) Month, day and year the project was cancelled or ended
+// status: 0 = cancelled or ended, 1 = active, 2 = on hold (no development for over a week)
+// description: Obvious, isn't it?
+// link: (if any) A URL with a working example or presentation of the project
+
 const projects = [
     {
         "name":"Space Climb Reborn",
-        "start":[1, 1, 2022],
-        "release":[1, 1, 2022],
-        "banner":"space climb.png",
-        "tagline":"A randomly-generated strategy game",
-        "description":"A randomly-generated strategy game",
-        "link":"https://thecreatorgrey.com/space-climb-reborn"
+        "id":"space-climb-reborn",
+
+        "startDate":[1, 1, 2022],
+        "releaseDate":[1, 1, 2022],
+        "endDate":null,
+
+        "status":1,
+        "description":"Randomly-generated strategy game.",
+        "link":"https://thecreatorgrey.com/space-climb-reborn",
     },
 
     {
         "name":"Ruby Soundboard",
-        "start":[1, 1, 2023],
-        "release":[1, 1, 2023],
-        "banner":"rs.png",
-        "tagline":"A browser based soundboard",
-        "description":"A browser based soundboard",
-        "link":"https://thecreatorgrey.com/ruby-soundboard"
+        "id":"ruby-soundboard",
+
+        "startDate":[1, 1, 2023],
+        "releaseDate":[1, 1, 2023],
+        "endDate":[9, 16, 2024],
+
+        "status":0,
+        "description":"Browser based soundboard.",
+        "link":"https://thecreatorgrey.com/ruby-soundboard",
     },
 
     {
         "name":"Voxelantis",
-        "start":[8, 29, 2023],
-        "release":[8, 31, 2023],
-        "banner":"mt.png",
-        "tagline":"A voxel based sandbox game",
-        "description":"A voxel based sandbox game",
-        "link":"https://thecreatorgrey.com/voxelantis"
+        "id":"voxelantis",
+
+        "startDate":[8, 29, 2023],
+        "releaseDate":[8, 31, 2023],
+        "endDate":null,
+
+        "status":1,
+        "description":"Voxel based sandbox game.",
+        "link":"https://thecreatorgrey.com/voxelantis",
     },
 
     {
         "name":"Kodiak",
-        "start":[9, 18, 2023],
-        "release":[12, 14, 2023],
-        "banner":"kodiak WE.png",
-        "tagline":"A WebGL game creation tool and level editor",
-        "description":"A WebGL game creation tool and level editor",
-        "link":"https://thecreatorgrey.com/kodiak/studio"
+        "id":"kodiak",
+
+        "startDate":[9, 18, 2023],
+        "releaseDate":[12, 14, 2023],
+        "endDate":null,
+
+        "status":2,
+        "description":"WebGL game creation tool and level editor.",
+        "link":"https://thecreatorgrey.com/kodiak/studio",
     },
 
     {
         "name":"Word Generator for Conlangs",
-        "start":[8, 5, 2024],
-        "release":[8, 5, 2024],
-        "banner":"wgfc.png",
-        "tagline":"A simple word generator",
-        "description":"A simple word generator",
-        "link":"https://thecreatorgrey.com/wordgen/"
+        "id":"wgfc",
+
+        "startDate":[8, 5, 2024],
+        "releaseDate":[8, 5, 2024],
+        "endDate":null,
+
+        "status":1,
+        "description":"Word generator (for conlangs).",
+        "link":"https://thecreatorgrey.com/wordgen/",
     },
 
     {
         "name":"Clykr",
-        "start":[8, 23, 2024],
-        "release":[8, 23, 2024],
-        "banner":"missing.svg",
-        "tagline":"A simple autoclicker",
-        "description":"A simple autoclicker",
-        "link":"https://github.com/TheCreatorGrey/Clykr"
+        "id":"clykr",
+
+        "startDate":[8, 23, 2024],
+        "releaseDate":[8, 23, 2024],
+        "endDate":null,
+
+        "status":1,
+        "description":"Simple autoclicker.",
+        "link":"https://thecreatorgrey.com/Clykr",
     },
 
     {
         "name":"Raster Online",
-        "start":[9, 10, 2024],
-        "release":[9, 13, 2024],
-        "banner":"missing.svg",
-        "tagline":"An online pixel editor",
-        "description":"An online pixel editor",
-        "link":"https://thecreatorgrey.com/raster-online/"
+        "id":"raster-online",
+
+        "startDate":[9, 10, 2024],
+        "releaseDate":[9, 13, 2024],
+        "endDate":null,
+
+        "status":1,
+        "description":"Online pixel art and raster editor.",
+        "link":"https://thecreatorgrey.com/raster-online/",
     },
 ]
 
@@ -88,21 +120,26 @@ function preciseYear(date) {
     return year
 }
 
-let sorted = projects.sort((a, b) => preciseYear(b.start) - preciseYear(a.start));
+let sorted = projects.sort((a, b) => preciseYear(b.startDate) - preciseYear(a.startDate));
 
 for (data of sorted) {
     let releaseYear
-    if (data.release) {
-        releaseYear = data.release[2]
+    if (data.releaseDate) {
+        releaseYear = data.releaseDate[2]
     } else {
         releaseYear = "Unreleased"
     }
 
-    document.getElementById("cards").innerHTML += `
-    <span class="card" onclick="if (${data.link !== null}) {window.open('${data.link}', '_blank').focus()}">
-        <img src="banners/${data.banner}" alt="banner">
-        <span>${data.name} (${releaseYear})</span><br>
-        <span style="font-size: 15px">${data.tagline}</span>
-    </span>
-`
+    let tagline = data.description.split(".")[0]
+
+    cardArea.insertAdjacentHTML(
+        'beforeend',
+        `
+        <span class="card" id="card-${data.id}" onclick="if (${data.link !== null}) {window.open('${data.link}', '_blank').focus()}">
+            <img src="banners/${data.id}.png" alt="banner" onerror="this.onerror=''; this.src='banners/missing.svg';">
+            <span>${data.name} (${releaseYear})</span><br>
+            <span style="font-size: 15px">${tagline}</span>
+        </span>
+        `
+    )
 }
