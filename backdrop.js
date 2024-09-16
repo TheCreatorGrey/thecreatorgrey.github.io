@@ -1,17 +1,14 @@
 let canvas = document.getElementById('backdrop');
 let ctx = canvas.getContext('2d');
 
-
+// Isometric projection
 function project(x, y, z) {
-  // Define the isometric projection factors
   const factorX = Math.cos(Math.PI / 6);
   const factorY = Math.sin(Math.PI / 6);
-  
-  // Perform the isometric projection
+
   const projectedX = (x - y) * factorX;
   const projectedY = (x + y) * factorY - z;
   
-  // Return the projected coordinates in a list
   return [projectedX, projectedY];
 }
 
@@ -36,7 +33,13 @@ function regen() {
       let xval = proj[0] + (canvas.width / 2);
       yval -= 80;
 
-      column.push({x:xval, y:yval, depth:(Math.random() - .5)*3, direction:'up', anchor:yval+((Math.random() - .5)*20)});
+      column.push({
+        x:xval, 
+        y:yval, 
+        depth:(Math.random() - .5)*3, 
+        direction:'up', 
+        origin:yval+((Math.random() - .5)*20)
+      });
     };
 
     spots.push(column);
@@ -60,7 +63,7 @@ function updateAnim() {
       for (var s in col) {
         let spot = col[s];
 
-        spots[index_y][index_x].depth += (spot.y - spot.anchor)/80
+        spots[index_y][index_x].depth += (spot.y - spot.origin)/80
 
         spots[index_y][index_x].y -= spots[index_y][index_x].depth;
 
@@ -83,6 +86,6 @@ function updateAnim() {
     };
 };
 
-setInterval(updateAnim, 60);
+setInterval(updateAnim, 120);
 
 window.addEventListener("resize", regen);
