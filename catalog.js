@@ -14,15 +14,52 @@
 
 const projects = [
     {
-        "name":"Space Climb Reborn",
-        "id":"space-climb-reborn",
+        "name":"Ultimate Sandbox",
+        "id":"ultimate-sandbox",
+
+        "startDate":[null, null, 2021],
+        "releaseDate":[null, null, 2021],
+        "endDate":[null, null, 2021],
+
+        "status":0,
+        "description":`Sandbox game.
+
+        The source code for this project has
+        been lost. It's probably for the better,
+        anyways. It was awful.
+        
+        This page exists purely to keep a record.`,
+    },
+
+    {
+        "name":"Space Climb",
+        "id":"space-climb",
 
         "startDate":[null, null, 2022],
         "releaseDate":[null, null, 2022],
+        "endDate":[null, null, 2022],
+
+        "status":0,
+        "description":`Randomly-generated strategy game.
+
+        Sadly, this version of Space Climb has 
+        been lost. There is a newer version available at 
+        https://thecreatorgrey.com/space-climb-reborn/
+        
+        This page exists purely to keep a record.`,
+    },
+
+    {
+        "name":"Space Climb Reborn",
+        "id":"space-climb-reborn",
+
+        "startDate":[null, null, 2023],
+        "releaseDate":[null, null, 2023],
         "endDate":null,
 
         "status":2,
-        "description":"Randomly-generated strategy game.",
+        "description":`Randomly-generated strategy game.
+        Instructions are available in-menu.`,
         "link":"https://thecreatorgrey.com/space-climb-reborn",
         "github":"space-climb-reborn"
     },
