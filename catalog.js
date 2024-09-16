@@ -24,11 +24,9 @@ const projects = [
         "status":0,
         "description":`Sandbox game.
 
-        The source code for this project has
-        been lost. It's probably for the better,
-        anyways. It was awful.
+        The original copy of this project was lost.
         
-        This page exists purely to keep a record.`,
+        This page will stay as a record.`,
     },
 
     {
@@ -42,11 +40,12 @@ const projects = [
         "status":0,
         "description":`Randomly-generated strategy game.
 
-        Sadly, this version of Space Climb has 
-        been lost. There is a newer version available at 
+        The original copy of this version of Space Climb 
+        was lost and is no longer available. There is a 
+        newer version available at:
         https://thecreatorgrey.com/space-climb-reborn/
         
-        This page exists purely to keep a record.`,
+        This page will stay as a record.`,
     },
 
     {
