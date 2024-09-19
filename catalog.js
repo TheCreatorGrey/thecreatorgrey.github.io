@@ -12,10 +12,9 @@
 // link: (if any) A URL with a working example or presentation of the project
 // github: (if any) Name of the github repository containing the project
 
-const projects = [
-    {
+const projects = {
+    "ultimate-sandbox":{
         "name":"Ultimate Sandbox",
-        "id":"ultimate-sandbox",
 
         "startDate":[null, null, 2021],
         "releaseDate":[null, null, 2021],
@@ -29,13 +28,12 @@ const projects = [
         This page will stay as a record.`,
     },
 
-    {
+    "space-climb":{
         "name":"Space Climb",
-        "id":"space-climb",
 
         "startDate":[null, null, 2022],
         "releaseDate":[null, null, 2022],
-        "endDate":[null, null, 2022],
+        "endDate":[null, null, 2023],
 
         "status":0,
         "description":`Randomly-generated strategy game.
@@ -48,9 +46,8 @@ const projects = [
         This page will stay as a record.`,
     },
 
-    {
+    "space-climb-reborn":{
         "name":"Space Climb Reborn",
-        "id":"space-climb-reborn",
 
         "startDate":[null, null, 2023],
         "releaseDate":[null, null, 2023],
@@ -63,9 +60,8 @@ const projects = [
         "github":"space-climb-reborn"
     },
 
-    {
+    "ruby-soundboard":{
         "name":"Ruby Soundboard",
-        "id":"ruby-soundboard",
 
         "startDate":[null, null, 2023],
         "releaseDate":[null, null, 2023],
@@ -80,9 +76,10 @@ const projects = [
         "github":"ruby-soundboard"
     },
 
-    {
+    "voxelantis":{
         "name":"Voxelantis",
-        "id":"voxelantis",
+
+        "previousAliases":["Mine Thing"],
 
         "startDate":[8, 29, 2023],
         "releaseDate":[8, 31, 2023],
@@ -94,9 +91,8 @@ const projects = [
         "github":"voxelantis"
     },
 
-    {
+    "kodiak":{
         "name":"Kodiak",
-        "id":"kodiak",
 
         "startDate":[9, 18, 2023],
         "releaseDate":[12, 14, 2023],
@@ -108,9 +104,8 @@ const projects = [
         "github":"kodiak"
     },
 
-    {
+    "wgfc":{
         "name":"Word Generator for Conlangs",
-        "id":"wgfc",
 
         "startDate":[8, 5, 2024],
         "releaseDate":[8, 5, 2024],
@@ -122,9 +117,8 @@ const projects = [
         "github":"wordgen"
     },
 
-    {
+    "clykr":{
         "name":"Clykr",
-        "id":"clykr",
 
         "startDate":[8, 23, 2024],
         "releaseDate":[8, 23, 2024],
@@ -136,9 +130,8 @@ const projects = [
         "github":"clykr"
     },
 
-    {
+    "raster-online":{
         "name":"Raster Online",
-        "id":"raster-online",
 
         "startDate":[9, 10, 2024],
         "releaseDate":[9, 13, 2024],
@@ -149,7 +142,20 @@ const projects = [
         "link":"https://thecreatorgrey.com/raster-online/",
         "github":"raster-online"
     },
-]
+
+    "unnamed":{
+        "name":"Unnamed",
+
+        "startDate":[6, 14, 2024],
+        "releaseDate":null,
+        "endDate":null,
+
+        "status":0,
+        "description":"A remake of a cancelled project that was started in 2022",
+        "link":"",
+        "github":""
+    },
+}
 
 
 function getBannerSource(id) {

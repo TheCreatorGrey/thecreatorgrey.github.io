@@ -25,12 +25,12 @@ function formatDate(date) {
 
 const params = new URLSearchParams(window.location.search);
 const projectID = params.get("id");
-const projectInfo = getProjectByID(projectID);
+const projectInfo = projects[projectID];
 
 
 document.getElementById(
     "project-banner"
-).src = getBannerSource(projectInfo.id)
+).src = getBannerSource(projectID)
 
 document.getElementById(
     "project-title"
