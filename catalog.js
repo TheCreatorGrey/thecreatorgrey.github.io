@@ -1,13 +1,11 @@
 // date format is month, day, year
-// dates before 8/26 may not be accurate
-
+// dates before 8/26 be inaccurate
 
 // name: Displayed name of project
-// id: A URL and filename safe version of the project's name
 // startDate: Month, day and year the project was started
 // releaseDate: (if any) Month, day and year the project was released
 // endDate: (if any) Month, day and year the project was cancelled or ended
-// status: 0 = cancelled or ended, 1 = active, 2 = on hold (no development for over a week)
+// status: 0 = cancelled or ended, 1 = active, 2 = on hold (no development for over a month)
 // description: Obvious, isn't it?
 // link: (if any) A URL with a working example or presentation of the project
 // github: (if any) Name of the github repository containing the project
@@ -49,8 +47,8 @@ const projects = {
     "space-climb-reborn":{
         "name":"Space Climb Reborn",
 
-        "startDate":[null, null, 2023],
-        "releaseDate":[null, null, 2023],
+        "startDate":[6, 10, 2023],
+        "releaseDate":[9, 2, 2023],
         "endDate":null,
 
         "status":2,

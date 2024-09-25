@@ -28,9 +28,15 @@ const projectID = params.get("id");
 const projectInfo = projects[projectID];
 
 
-document.getElementById(
+let projectBanner = document.getElementById(
     "project-banner"
-).src = getBannerSource(projectID)
+)
+projectBanner.src = getBannerSource(projectID)
+projectBanner.onload = function () {
+    if (this.naturalWidth < 100) {
+        this.style.imageRendering = 'pixelated'
+    }
+}
 
 document.getElementById(
     "project-title"

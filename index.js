@@ -39,15 +39,10 @@ for (let data of sorted) {
 
     let tagline = data.description.split(".")[0]
 
-    let additionalStyling = "";
-    if (data.status === 0) {
-        additionalStyling = 'style="filter: brightness(0.5);"'
-    }
-
     cardArea.insertAdjacentHTML(
         'beforeend',
         `
-        <span class="card" id="card-${data.id}" onclick="document.location.href = 'project/?id=${data.id}'" ${additionalStyling}>
+        <span class="card" id="card-${data.id}" onclick="document.location.href = 'project/?id=${data.id}'">
             <img src="${getBannerSource(data.id)}" alt="banner">
             <span>${data.name} (${releaseYear})</span><br>
             <span style="font-size: 15px">${tagline}</span>
@@ -55,5 +50,17 @@ for (let data of sorted) {
         `
     )
 
+    let card = document.getElementById(`card-${data.id}`);
+    if (data.status === 0) {
+        card.style.filter = 'brightness(0.5)'
+    }
     
+    let thumb = card.getElementsByTagName("img")[0];
+    // If thumbnail is pixelated (<100 pixels) apply pixelated filter
+    thumb.onload = function () {
+        if (this.naturalWidth < 100) {
+            this.style.imageRendering = 'pixelated'
+        }
+    }
+
 }
