@@ -5,7 +5,7 @@
 // startDate: Month, day and year the project was started
 // releaseDate: (if any) Month, day and year the project was released
 // endDate: (if any) Month, day and year the project was cancelled or ended
-// status: 0 = cancelled or ended, 1 = active, 2 = on hold (no development for over a month)
+// status: 0 = cancelled or ended, 1 = active, 2 = on hold (no development for an extended period of time)
 // description: Obvious, isn't it?
 // link: (if any) A URL with a working example or presentation of the project
 // github: (if any) Name of the github repository containing the project
@@ -51,9 +51,15 @@ const projects = {
         "releaseDate":[9, 2, 2023],
         "endDate":null,
 
-        "status":2,
+        "status":1,
         "description":`Randomly-generated strategy game.
-        Instructions are available in-menu.`,
+
+        This idea started in an attempt to make a
+        random 3D platformer level generator. I started
+        applying psuedorandom numbers to different values of
+        cubes and thought it looked cool.
+
+        Instructions are available in-game.`,
         "link":"https://thecreatorgrey.com/space-climb-reborn",
         "github":"space-climb-reborn"
     },

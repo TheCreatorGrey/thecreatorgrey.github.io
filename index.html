@@ -7,49 +7,54 @@
 		<title>Portfolio</title>
 		<meta name="description" content="My projects and other stuff">
 		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="/icon.png">
+		<link rel="icon" href="/assets/icon.png">
     </head>
   	<body>
-		<canvas id="backdrop"></canvas>
+		<div id="intro">
+			<h2 id="hellothere">Hello! <img src="./assets/waving.gif" alt=":)"></h2>
+			<br><br>
 
-		<div class="scrollable">
-			<div class="end-area">
-				<img id="home_banner" src="home_banner.png">
+			<span>
+				I'm Grey, a highschool student from the United States. <br>
+				This is a website dedicated to sharing things I've made <br>
+				with the internet. Enjoy! <br>
 
-				<div>
-					This is a collection of my publicly released projects. <br><br>
+				<br>
+				<span style="color: grey;">
+					I originally made this website to showcase my coding projects, <br>
+					but I'm reworking some parts of it to include other things, like <br>
+					sewing projects and art. I've changed the styling a bit, but I'm <br>
+					still working on the content loader. For now, here are my <br>
+					published coding projects: <br>
+				</span>
+			</span>
+		</div>
 
-					🚧 This website is still being worked on 🚧
-				</div>
-			</div>
-			<div id="top-gradient"></div>
+		<div id="cards">
+		</div>
 
-			<div id="cards">
-			</div>
+		<div class="footer">
 
-			<div id="bottom-gradient"></div>
-			<div class="end-area">
-
-				<a href="https://www.youtube.com/@thecreatorgrey">YouTube</a> • 
-				<a href="https://discord.gg/d6HCduNWcd">Discord</a> • 
-				<a href="https://www.reddit.com/user/thecreatorgrey/">Reddit</a> • 
-				<a href="https://github.com/TheCreatorGrey">Github</a> • 
-				<a href="https://stackoverflow.com/users/23372372/thecreatorgrey">StackOverflow</a>
-			</div>
+			<a href="https://www.youtube.com/@thecreatorgrey">YouTube</a> • 
+			<a href="https://discord.gg/d6HCduNWcd">Discord</a> • 
+			<a href="https://www.reddit.com/user/thecreatorgrey/">Reddit</a> • 
+			<a href="https://github.com/TheCreatorGrey">Github</a> • 
+			<a href="https://stackoverflow.com/users/23372372/thecreatorgrey">StackOverflow</a>
+			<br><br>
+			Want to contact me? Send me an email at contact@thecreatorgrey.com
 		</div>
 
 		<noscript>
-            <div class="overrideBackground">
+            <div id="missingJS">
                 <h1 class="centered">
-                    Erm excuse me your JavaScript is disabled<br><br>
+                    This website requires JavaScript to load content.<br><br>
 
-                    (This website requires JavaScript to load content)
+                    Please enable it.
                 </h1>
             </div>
         </noscript>
 
 		<script src="catalog.js"></script>
 		<script src="index.js"></script>
-		<script src="backdrop.js"></script>
  	</body>
 </html>
