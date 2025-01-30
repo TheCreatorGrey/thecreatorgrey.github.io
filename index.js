@@ -1,5 +1,7 @@
 const board = document.getElementById("board");
-const cardArea = document.getElementById("cards");
+const category_buttons = document.getElementById("categories");
+const card_area = document.getElementById("cards");
+
 
 function openProject(obj) {
     if (obj.link) {
@@ -7,16 +9,47 @@ function openProject(obj) {
     }
 }
 
-function preciseYear(date) {
-    let year = date[2]
-    year += date[0]/12
-    year += date[1]/365
+function releaseTime(project) {
+    let date = project.releaseDate;
+
+    if (date.includes(null)) {
+        date = project.startDate
+    }
+
+    let year = date[2];
+    year += date[0]/12;
+    year += date[1]/365;
     return year
 }
 
 
 
+for (let category in categories) {
+    let cat_info = categories[category];
+    let button = document.createElement("button");
+    button.innerText = category;
 
+    button.style.backgroundColor = `
+        rgb(${cat_info.color[0]}, 
+            ${cat_info.color[1]}, 
+            ${cat_info.color[2]})`
+
+    button.onclick = () => {
+        onlyShowCategory = `${category}`;
+        loadProjects();
+    }
+
+    category_buttons.appendChild(button);
+}
+
+const category_all_button = document.getElementById("category-all");
+category_all_button.style.backgroundColor = "grey";
+category_all_button.onclick = () => {
+    onlyShowCategory = null;
+    loadProjects();
+}
+
+let onlyShowCategory = "Software";
 let sorted = [];
 for (let id in projects) {
     let project = projects[id];
@@ -27,40 +60,71 @@ for (let id in projects) {
     }
 }
 
-sorted = sorted.sort((a, b) => preciseYear(b.releaseDate) - preciseYear(a.releaseDate));
+sorted = sorted.sort((a, b) => releaseTime(b) - releaseTime(a));
 
-for (let data of sorted) {
-    let releaseYear
-    if (data.releaseDate) { // this is currently unused due to the above code
-        releaseYear = data.releaseDate[2]
-    } else {
-        releaseYear = "Unreleased"
-    }
+function loadProjects() {
+    card_area.innerHTML = "";
 
-    let tagline = data.description.split(".")[0]
-
-    cardArea.insertAdjacentHTML(
-        'beforeend',
-        `
-        <span class="card" id="card-${data.id}" onclick="document.location.href = 'project/?id=${data.id}'">
-            <img src="${getBannerSource(data.id)}" alt="banner">
-            <span>${data.name} (${releaseYear})</span><br>
-            <span style="font-size: 15px">${tagline}</span>
-        </span>
-        `
-    )
-
-    let card = document.getElementById(`card-${data.id}`);
-    if (data.status === 0) {
-        card.style.filter = 'brightness(0.5)'
-    }
-    
-    let thumb = card.getElementsByTagName("img")[0];
-    // If thumbnail is pixelated (<100 pixels) apply pixelated filter
-    thumb.onload = function () {
-        if (this.naturalWidth < 100) {
-            this.style.imageRendering = 'pixelated'
+    for (let data of sorted) {
+        if (onlyShowCategory) {
+            if (data.category != onlyShowCategory) {
+                continue
+            }
         }
-    }
 
+        let releaseYear
+        if (data.startDate) { // this is currently unused due to the above code
+            releaseYear = data.startDate[2]
+        } else {
+            releaseYear = "Unreleased"
+        }
+    
+        let category = categories[data.category];
+        let color = `rgb(${category.color[0]}, ${category.color[1]}, ${category.color[2]})`;
+        let transparentColor = `rgba(${category.color[0]}, ${category.color[1]}, ${category.color[2]}, 0.5)`;
+    
+        // Card
+        let card = document.createElement("span");
+        card.className = "card";
+        card.onclick = () => {document.location.href = `project/?id=${data.id}`};
+        card.style.borderColor = color;
+        card.style.background = transparentColor;
+        //card.style.
+    
+        card_area.appendChild(card);
+
+        // Card banner container
+        let banner_container = document.createElement("div");
+        banner_container.className = "banner-container";
+        banner_container.style.borderColor = color;
+        banner_container.style.backgroundColor = transparentColor;
+        card.appendChild(banner_container);
+    
+        // Card banner
+        let banner = document.createElement("img");
+        banner.src = getBannerSource(data.id);
+        banner.alt = "banner";
+        banner_container.appendChild(banner);
+    
+        // If banner is pixelated (<100 pixels) apply pixelated filter so it isn't blurry
+        banner.onload = function () {
+            if (this.naturalWidth < 100) {
+                this.style.imageRendering = 'pixelated'
+            }
+        }
+    
+        // Card title
+        let title = document.createElement("span");
+        title.innerText = `${data.name} (${releaseYear})`;
+        card.appendChild(title);
+    
+        // Card category tag
+        let tag = document.createElement("span");
+        tag.className = "categoryTag";
+        tag.innerText = `${data.category} | ${data.subcategory}`;
+        tag.style.backgroundColor = color;
+        card.appendChild(tag);
+    }
 }
+
+loadProjects();

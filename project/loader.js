@@ -60,44 +60,16 @@ if (projectInfo.link) {
 
 let properties = '\n\n';
 
-properties += `Created: ${formatDate(projectInfo.startDate)}\n`
+properties += `Started: ${formatDate(projectInfo.startDate)}\n`
 if (projectInfo.releaseDate) {
-    properties += `Released: ${formatDate(projectInfo.releaseDate)}\n`
+    properties += `Released or finished: ${formatDate(projectInfo.releaseDate)}\n`
 } else {
-    properties += `Released: Not Released\n`
+    properties += `Released or finished: Not Released or finished\n`
 }
 if (projectInfo.endDate) {
     properties += `Ended: ${formatDate(projectInfo.endDate)}\n`
 }
 
-properties += `Status: ${
-    [
-        "Cancelled or Ended", 
-        "Active Development", 
-        "On Hold"
-    ][projectInfo.status]}\n`
-
 document.getElementById(
     "project-properties"
 ).innerText = properties
-
-
-
-let changeDisplay = document.getElementById(
-    "project-changes"
-)
-
-if (projectInfo.github) {
-    getLatestGithubCommits(projectInfo.github, 6).then(
-        (commits) => {
-            console.log(commits)
-            for (let c of commits) {
-                changeDisplay.innerHTML += `
-                ${c[0]}<br>(${formatDate(c[1])})<br><br>
-                `
-            }
-        }
-    )
-} else {
-    changeDisplay.hidden = true
-}
