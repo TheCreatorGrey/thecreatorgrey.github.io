@@ -78,6 +78,7 @@ const projects = {
         "description":`Browser based soundboard.
         Click on the title of any card and select an audio file.
         You can click on any card with a file to play the sound.
+        Originally made as a commission.
         `,
         "link":"https://thecreatorgrey.com/ruby-soundboard"
     },

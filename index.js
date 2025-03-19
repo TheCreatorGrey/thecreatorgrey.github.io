@@ -89,8 +89,6 @@ function loadProjects() {
         card.onclick = () => {document.location.href = `project/?id=${data.id}`};
         card.style.borderColor = color;
         card.style.background = transparentColor;
-        //card.style.
-    
         card_area.appendChild(card);
 
         // Card banner container
