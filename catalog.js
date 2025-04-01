@@ -213,30 +213,15 @@ const projects = {
 };
 
 const categories = {
-    "Software":{
-        "color":[100, 100, 255],
+    "🪑":{
+        "color":[255, 255, 0],
         "subcategories":["Game", "Tool"]
     },
 
-    "Music":{
-        "color":[200, 100, 255],
-        "subcategories":["Single", "Album", "EP"]
+    "☎️":{
+        "color":[255, 0, 0],
+        "subcategories":["Game", "Tool"]
     },
-
-    "Sewing":{
-        "color":[200, 100, 100],
-        "subcategories":["Single", "Album", "EP"]
-    },
-
-    "Models":{
-        "color":[100, 200, 100],
-        "subcategories":["Building"]
-    },
-
-    "Art":{
-        "color":[200, 200, 100],
-        "subcategories":["Sculpture", "Pixel Art", "Drawing"]
-    }
 };
 
 

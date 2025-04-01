@@ -80,13 +80,13 @@ function loadProjects() {
         }
     
         let category = categories[data.category];
-        let color = `rgb(${category.color[0]}, ${category.color[1]}, ${category.color[2]})`;
-        let transparentColor = `rgba(${category.color[0]}, ${category.color[1]}, ${category.color[2]}, 0.5)`;
+        let color = `rgb(65, 77, 0)`;
+        let transparentColor = `rgba(65, 77, 0, 0.5)`;
     
         // Card
         let card = document.createElement("span");
         card.className = "card";
-        card.onclick = () => {document.location.href = `project/?id=${data.id}`};
+        card.onclick = () => {document.location.href = `meowl.webp`};
         card.style.borderColor = color;
         card.style.background = transparentColor;
         card_area.appendChild(card);
@@ -100,7 +100,7 @@ function loadProjects() {
     
         // Card banner
         let banner = document.createElement("img");
-        banner.src = getBannerSource(data.id);
+        banner.src = "meowl.webp";
         banner.alt = "banner";
         banner_container.appendChild(banner);
     
@@ -113,14 +113,14 @@ function loadProjects() {
     
         // Card title
         let title = document.createElement("span");
-        title.innerText = `${data.name} (${releaseYear})`;
+        title.innerText = "fredrick";
         card.appendChild(title);
     
         // Card category tag
         let tag = document.createElement("span");
         tag.className = "categoryTag";
-        tag.innerText = `${data.category} | ${data.subcategory}`;
-        tag.style.backgroundColor = color;
+        tag.innerText = "☎️";
+        tag.style.backgroundColor = "red";
         card.appendChild(tag);
     }
 }

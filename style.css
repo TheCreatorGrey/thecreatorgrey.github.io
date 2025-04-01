@@ -1,11 +1,17 @@
+@font-face {
+    font-family: comicsans;
+    src: url(comicsans.TTF);
+}
+
 body {
     text-align: center;
     margin: 0;
     background-color: rgb(15, 15, 15);
-    color: white;
-    font-family: Arial;
+    color: rgb(255, 230, 0);
+    font-family: comicsans;
     user-select: none;
-    background-image: url(./assets/background_tile_purple.png);
+    background-image: url(creature.png);
+    background-color: rgb(75, 30, 16);
     background-size: 100px;
 }
 
