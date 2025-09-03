@@ -1,0 +1,17 @@
+{
+    "about":"My first (work in progress) EP (2025)",
+    "description":"My first EP featuring tracks with space-themed names and lots of reverb. Made with LMMS and ZynAddSubFX presets. Work in progress.",
+    "links":[
+        {
+            "type":"url", 
+            "name":"1 - Orbit (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=xLJGQ0cmEQo"
+        },
+
+        {
+            "type":"url", 
+            "name":"2 - Satellite (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=NJZOckSTA_c"
+        }
+    ]
+}

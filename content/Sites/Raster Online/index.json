@@ -1,0 +1,11 @@
+{
+    "about":"An online pixel art and raster editor. Originally created to make textures for Voxelantis (2024)",
+    "description":"An online pixel art and raster editor. Originally created to make textures for Voxelantis. \n\nStarted on 9/10/2024\nReleased on 9/13/2024",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to Raster Online", 
+            "link":"https://thecreatorgrey.com/raster-online/"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "about":"A collection of standalone tracks",
+    "description":"A collection of standalone tracks. For now there is only one.",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Computation (Jun 2025) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=xLJGQ0cmEQo"
+        }
+    ]
+}

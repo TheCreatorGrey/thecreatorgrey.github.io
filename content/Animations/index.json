@@ -1,0 +1,47 @@
+{
+    "about":"My animated projects",
+    "description":"My animated projects. Both lazy and with effort. So far, all of them have been made solely in Blender. I haven't spent more than a few days on any of these so don't expect anything amazing. No descriptions yet.",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Forgetful Clown Breaks Into His Own Home and Tries to Steal Furniture (Apr 2025) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=5gffb11y3Xk"
+        },
+
+        {
+            "type":"url", 
+            "name":"This animation sucks (May 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=tI36J8Nk9lg"
+        },
+
+        {
+            "type":"url", 
+            "name":"c a r b o h y d r a t i o n (Apr 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=Oll5HUi5V5s&pp=0gcJCcYJAYcqIYzv"
+        },
+
+        {
+            "type":"url", 
+            "name":"Grey's Ragdoll Animation (Mar 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=xTC6qQiOO20"
+        },
+
+        {
+            "type":"url", 
+            "name":"I was too lazy to finish this but I'm posting it anyways (Mar 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=LIX4TDEQpNE"
+        },
+
+        {
+            "type":"url", 
+            "name":"Blender Clothing Simulation Thing (Jan 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=TeT4y29CEBc"
+        },
+
+        {
+            "type":"url", 
+            "name":"Test Animation (Jan 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=NpLExR1lza4"
+        }
+    ]
+}

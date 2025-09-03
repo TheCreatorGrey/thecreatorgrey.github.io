@@ -1,0 +1,11 @@
+{
+    "about":"A simple soundboard (2023)",
+    "description":"A simple soundboard that was commissioned in 2023. The exact dates weren't documented. Sounds can be loaded into any of the buttons when the text is clicked. When the other part of a button is clicked, its sound is played.",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to Ruby Soundboard", 
+            "link":"https://thecreatorgrey.com/ruby-soundboard/"
+        }
+    ]
+}

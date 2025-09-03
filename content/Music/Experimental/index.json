@@ -1,0 +1,29 @@
+{
+    "about":"A collection of short, incomplete, and experimental tracks",
+    "description":"A collection of unnamed and experimental tracks",
+    "links":[
+        {
+            "type":"url", 
+            "name":"String Mini Beat (Mar 2025) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=Hp-abPWpsN4"
+        },
+
+        {
+            "type":"url", 
+            "name":"Desolate Loop (Jan 2025) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=1yOfSfGuP5k"
+        },
+
+        {
+            "type":"url", 
+            "name":"Filters are Powerful (Dec 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=U9lMUSQN_-o"
+        },
+
+        {
+            "type":"url", 
+            "name":"Beginner Beat (Dec 2024) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=lze6zfd69Fw"
+        }
+    ]
+}

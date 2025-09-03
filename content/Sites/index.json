@@ -1,0 +1,12 @@
+{
+    "about":"Web games, tools and other web-based projects",
+    "description":"These are web games, tools and other web-based projects I've made so far. Keep in mind any dates 2023 and earlier may not be accurate as I didn't really keep track of dates before then. Some of these dates are based on file metadata, screenshots and memory. Projects are listed from most to least recent.",
+    "branches":[
+        "Kodiak",
+        "Raster Online",
+        "Word Generator for Conlangs",
+        "Space Climb: Reborn",
+        "Voxelantis",
+        "Ruby Soundboard"
+    ]
+}

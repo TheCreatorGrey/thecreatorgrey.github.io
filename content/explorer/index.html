@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Tree Explorer</title>
+    <link rel="stylesheet" href="/style.css">
+    <link id="icon" rel="icon" href="/assets/characters/booker.png">
+</head>
+<body>
+    <div id="column" class="centered-content">
+        <h4>
+            <img id="booker" src="/assets/characters/booker.png" alt="booker" class="character">
+
+            <div style="display: inline-block;">
+                <span>
+                    <a href="https://thecreatorgrey.com">TheCreatorGrey.com</a> Content Index
+                </span><br>
+    
+                <button id="back_button">
+                    Back
+                </button>
+    
+                <span id="path_buttons">
+                </span>
+    
+                <span id="source_display"></span>
+            </div>
+        </h4>
+
+        <hr>
+
+        <span id="description"></span>
+
+        <hr>
+
+        <div id="children"></div>
+
+        <h6>
+            Copyright © 2025 TheCreatorGrey<br>
+            All rights reserved
+        </h6>
+    </div>
+
+    <noscript>
+        <div id="missingJS">
+            <h1 class="centered">
+                HEY YOU! <br><br>
+
+                This website requires JavaScript <br>
+                to be enabled in order to load content. <br>
+                Could you please enable it? :3
+            </h1>
+        </div>
+    </noscript>
+
+    <style>
+        #column {
+            border-left: 1px solid rgb(138, 37, 233);
+            border-right: 1px solid rgb(138, 37, 233);
+        }
+
+        #children a {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #booker {
+            margin-right: 50px;
+            vertical-align: top;
+        }
+
+        #back_button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(138, 37, 233);
+            border: none;
+            padding: 5px;
+        }
+
+        #path_buttons button {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border: none;
+            border-left: 1px solid white;
+        }
+
+        #path_buttons button:hover {
+            color: rgb(138, 37, 233);
+        }
+    </style>
+
+    <script src="loader.js"></script>
+</body>
+</html>

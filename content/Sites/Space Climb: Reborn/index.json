@@ -1,0 +1,11 @@
+{
+    "about":"A web remake of the simple original randomly-generated 3D platformer (2023)",
+    "description":"A web remake of the simple original randomly-generated 3D platformer. The original Space Climb was made using Python and released on itch.io for Windows PCs. I've since lost the source code and all copies of the original game. Oopsy. The game came from an attempt to make a randomly generated 3D platformer level generator. I started applying random values to cubes and decided that was enough to make a game. \n\nStarted on 6/10/2023\nReleased on 9/2/2023",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to Space Climb: Reborn", 
+            "link":"https://thecreatorgrey.com/space-climb-reborn/"
+        }
+    ]
+}

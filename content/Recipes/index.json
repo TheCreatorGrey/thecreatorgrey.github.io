@@ -1,0 +1,13 @@
+{
+    "about":"A place for recipes when I have them",
+    "description":"A place for my recipes, which I don't have yet. Well, technically I do, but they are things like pasta salad. This page only really exists because I drew a little chef man and wanted somewhere to put him. His name is Thomas by the way.",
+    "styling":{
+        "background":"/assets/backgrounds/cookie.png",
+        "bg_size":200,
+        "text_color":[36, 17, 0],
+        "column_color":[255, 226, 171, 0.8],
+        "column_border_color":[255, 187, 0, 1],
+        "character":"/assets/characters/thomas.png",
+        "icon":"/assets/icons/flower.png"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "about":"A Minecraft clone that runs in a browser (2023)",
+    "description":"A Minecraft clone. Used to be called \"mine-thing\" when it was made in Python, but was later remade in JavaScript because the Python version was too slow, which at this point was renamed to \"Voxelantis\". Not much of an improvement, but I tried. All the other names were taken. It's incredible just how many Minecraft clones there are. Probably because basically every game developer since Minecraft has made one. \n\nStarted on 8/29/2023\nReleased on 8/31/2023",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to Voxelantis", 
+            "link":"https://thecreatorgrey.com/voxelantis/"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "about":"A word generator for constructed languages (2024)",
+    "description":"A simple tool for generating words for constructed languages which is based on AwkWords. I threw this together when the original site which AwkWords was on went down despite not using word generators for any of my current conlang projects. By far the most visited and used project of mine despite being the lowest effort. \n\nStarted on 8/5/2024\nReleased on 8/5/2024",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to Word Generator for Conlangs", 
+            "link":"https://thecreatorgrey.com/wordgen/"
+        }
+    ]
+}

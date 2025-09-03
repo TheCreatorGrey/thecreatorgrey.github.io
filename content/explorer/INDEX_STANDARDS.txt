@@ -1,0 +1,104 @@
+Most folders under content will have a file named index.json. This file
+allows the explorer to index and see the content of these folders.
+
+A folder which does not serve as a page but is meant to be indexed by the explorer is called a branch.
+If a folder has an index.json file, it is probably a branch.
+
+The format of these are as follows:
+
+{
+    "about":"A short description which appears next to a branch on the page of the parent branch",
+    "description":"A long description. A very long description. Definitely longer than the about description, for sure. Absolutely.",
+
+    "branches":[
+        "Name of branch 1",
+        "name of branch 2"
+    ],
+
+    "links":[
+        {
+            "type":"relative", 
+            "name":"The Name Of The File Shown In The Explorer", 
+            "link":"actualfilename.txt"
+        },
+
+        {
+            "type":"url",
+            "name":"Name Of Label For URL Shown In The Explorer", 
+            "link":"https://thecreatorgrey.com",
+
+            "metadata":"Potentially important information that is not required"
+        }
+    ]
+
+    "styling":[
+        "background":"/assets/backgrounds/optional_custom_bg.png",
+        "bg_size":50,
+        "column_color":[0, 0, 0, 0.5],
+        "column_border_color":[255, 0, 255, 1],
+        "character":"/assets/characters/optional_character.png",
+        "icon":"/assets/icons/optional_icon.png"
+    ]
+}
+
+
+about: Short description which will appear under the 
+link to a branch when browsing parent branches
+
+description: Long description which shows on the top 
+of the page when browsing this branch
+
+branches: Array of the names of the branches or folders 
+under this branch. May be omitted if there are no
+sub-branches.
+
+links: Array of objects containing information about
+links under this branch. Links may lead to files in
+the branch or pages outside of the explorer. May be 
+omitted if there are no links under this branch.
+    |
+    type: "URL" if the "link" property is a URL or
+    "relative" if the "link" property is the name of
+    a file in the folder of the branch
+    |
+    name: Name of the link shown in the explorer
+    |
+    link: Either a URL or the name of a local file
+    depending on the "type" property
+    |
+    metadata (optional): A JSON object with values 
+    containing necessary information. Some item 
+    formatting requires certain metadata.
+    |
+    format (optional): The name of a display format
+    By default, links will be rendered as plain-text 
+    clickable links. If a format is given, it will be
+    rendered in that "format", such as a card with 
+    an image.
+
+
+styling: Omitted in most cases. Custom styling which 
+will appear on the explorer page when it is browsing 
+this branch. If not used, default explorer styling 
+will be used.
+    |
+    background: Url of the background image to use
+    |
+    bg_size: Size of the tiled background in pixels
+    |
+    text_color: An array with the RGB values 
+    of the text color
+    |
+    column_color: An array with the RGBA values 
+    of the background color of the column where 
+    content is displayed
+    |
+    column_border_color: An array with the RGBA 
+    values of the border color of the column where 
+    content is displayed
+    |
+    character: Url of the image of a character to
+    be put in place of booker
+    |
+    icon: Url of the icon that will be used for
+    the page's tab
