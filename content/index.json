@@ -1,8 +1,8 @@
 {
     "about":"Surely some day I can put something good here",
-    "description":"You can use this page to navigate the content branch of my website, which is an index of some of my published projects and creative works. As for licensing, all of my projects are licensed separately; you can check the associated Github repository as most of my programming-related projects have one, including this website (at least for now). If you can't find the license for something, assume I reserve the rights. Also, don't try to use your browser's arrows to navigate this page because you'll just end up back on the home page. Instead, use the buttons on the top of this page. Double also, this index is a work in progress! Some stuff isn't here yet. By the way, did you know I made the font for this website?",
+    "description":"You can use this page to navigate the content branch of my website, which is an index of some of my published projects and creative works. Also, don't try to use your browser's arrows to navigate this page because you'll just end up back on the home page. Instead, use the buttons on the top of this page. Double also, this index is a work in progress! Some projects aren't here yet.",
     "branches":[
-        "Sites",
+        "Software",
         "Animations",
         "Music",
         "Recipes"

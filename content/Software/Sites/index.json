@@ -8,5 +8,12 @@
         "Space Climb: Reborn",
         "Voxelantis",
         "Ruby Soundboard"
-    ]
+    ],
+
+    "styling":{
+        "text_color":[200, 255, 200],
+        "bg_size":2000,
+        "background":"/assets/backgrounds/code.png",
+        "column_border_color":[0, 255, 0, 1]
+    }
 }

@@ -43,5 +43,11 @@
             "name":"Test Animation (Jan 2024) (YouTube)", 
             "link":"https://www.youtube.com/watch?v=NpLExR1lza4"
         }
-    ]
+    ],
+
+    "styling":{
+        "character":"/assets/characters/randy.png",
+        "column_color":[10, 0, 0, 0.5],
+        "column_border_color":[255, 100, 100, 1]
+    }
 }

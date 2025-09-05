@@ -13,5 +13,13 @@
             "name":"2 - Satellite (YouTube)", 
             "link":"https://www.youtube.com/watch?v=NJZOckSTA_c"
         }
-    ]
+    ],
+
+    "styling":{
+        "text_color":[255, 255, 255],
+        "bg_size":500,
+        "background":"/assets/backgrounds/LMMS_tracks.png",
+        "column_color":[80, 160, 80, 0.9],
+        "column_border_color":[0, 255, 0, 1]
+    }
 }

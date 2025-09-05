@@ -1,5 +1,15 @@
 {
     "about":"A collection of albums and EPs",
     "description":"A collection of albums and EPs.",
-    "branches":["Orbit (EP)"]
+    "branches":[
+        "Orbit (EP)"
+    ],
+
+    "styling":{
+        "text_color":[255, 255, 255],
+        "bg_size":500,
+        "background":"/assets/backgrounds/LMMS_tracks.png",
+        "column_color":[80, 160, 80, 0.9],
+        "column_border_color":[0, 255, 0, 1]
+    }
 }

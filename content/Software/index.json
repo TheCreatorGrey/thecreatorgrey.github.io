@@ -1,0 +1,14 @@
+{
+    "about":"Games, websites, tools, anything written with code",
+    "description":"Games, websites, tools, anything written with code. I have non-web projects, but I haven't added them here yet. As for licensing, all of my projects are licensed separately; you can check the associated Github repository as most of my programming-related projects have one, including this website (at least for now). If you can't find the license for something, assume I reserve the rights.",
+    "branches":[
+        "Sites"
+    ],
+
+    "styling":{
+        "text_color":[200, 255, 200],
+        "bg_size":2000,
+        "background":"/assets/backgrounds/code.png",
+        "column_border_color":[0, 255, 0, 1]
+    }
+}
