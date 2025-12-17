@@ -1,0 +1,22 @@
+{
+    "about":"My non-animated 3D works",
+    "description":"Here are my non-animated 3D works. There are only a couple examples here as most of my renders aren't here yet. This is a new section.",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Larry's Cheese (Nov 2025) (NewGrounds)", 
+            "link":"https://www.newgrounds.com/art/view/thecreatorgrey/larry-s-cheese"
+        },
+
+        {
+            "type":"url", 
+            "name":"Room (2023) (Bluesky)", 
+            "link":"https://bsky.app/profile/thecreatorgrey.com/post/3m63je6ajyk2j"
+        }
+    ],
+
+    "styling":{
+        "column_color":[10, 0, 0, 0.5],
+        "column_border_color":[255, 100, 100, 1]
+    }
+}

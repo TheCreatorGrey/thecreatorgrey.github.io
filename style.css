@@ -9,7 +9,6 @@ body {
     font-family: NeatInk;
     user-select: none;
     image-rendering: pixelated;
-    cursor: url(./assets/cursors/hand_point.png), auto;
     color: rgb(248, 214, 255);
     font-size: 20px;
 }
@@ -36,11 +35,6 @@ body {
 .character {
     image-rendering: pixelated;
     width: 100px;
-}
-
-
-a, button, textarea {
-    cursor: url(./assets/cursors/hand_point2.png), auto;
 }
 
 html, body {
