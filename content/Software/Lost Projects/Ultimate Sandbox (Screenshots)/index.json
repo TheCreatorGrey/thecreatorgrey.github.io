@@ -1,0 +1,31 @@
+{
+    "about":"Screenshots of Ultimate Sandbox, one of my first Python Projects",
+    "description":"These are screenshots of Ultimate Sandbox, one of my first Python Projects. Ultimate sandbox was made using one of the first Python libraries I learned, Ursina. It was a simple sandbox game where objects could be moved around using the keyboard and put together to build things. Different materials and primitive shapes could be assigned to each object. The correct dates are in the file names, not the metadata.",
+    "links":[
+        {
+            "type":"relative", 
+            "name":"Screenshot_2022-02-10_141331.webp", 
+            "link":"./Screenshot_2022-02-10_141331.webp"
+        },
+        {
+            "type":"relative", 
+            "name":"Screenshot_2022-02-10_142550.webp", 
+            "link":"./Screenshot_2022-02-10_142550.webp"
+        },
+        {
+            "type":"relative", 
+            "name":"Screenshot_2022-02-10_142720.webp", 
+            "link":"./Screenshot_2022-02-10_142720.webp"
+        },
+        {
+            "type":"relative", 
+            "name":"Screenshot_2022-02-10_142927.webp", 
+            "link":"./Screenshot_2022-02-10_142927.webp"
+        }
+    ],
+
+    "styling":{
+        "text_color":[255, 255, 255],
+        "column_border_color":[255, 255, 255, 1]
+    }
+}

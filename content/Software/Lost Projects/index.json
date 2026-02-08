@@ -1,0 +1,13 @@
+{
+    "about":"What's left of lost projects",
+    "description":"If I find a screenshot or some other remnant of a project that's otherwise completely lost, I will put it here. Hopefully I won't have to add much more here since I'm more cafeful not to accidentally delete things.",
+    "branches":[
+        "Ultimate Sandbox (Screenshots)",
+        "Space Climb V1 (Screenshots)"
+    ],
+
+    "styling":{
+        "text_color":[255, 255, 255],
+        "column_border_color":[255, 255, 255, 1]
+    }
+}

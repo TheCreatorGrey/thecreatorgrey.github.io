@@ -36,6 +36,8 @@ function applyStyling(styling) {
     if (styling.icon) {
         tab_icon.href = styling.icon
     }
+
+    console.log(styling)
 }
 
 

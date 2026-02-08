@@ -1,0 +1,22 @@
+{
+    "about":"Screenshots of the original Space Climb",
+    "description":"These are screenshots of the original Space Climb. The original Space Climb and its remake (which is still available) are pretty much identical, except for a few small differences. There were random cubes scattered everywhere. The goal was to get to the top by jumping between the cubes. The main difference between the original and the remake was that the original was in 3rd person view and had a grappling hook which had a limited number of uses. The grappling hook was added because since the cubes were randomized, there was no guarantee that the player could actually reach the top. In the remake the cubes were simply made to be closer together. The original was written in Python with Ursina and was published for Windows on itch.io in 2022. As the file names suggest, the dates in the file metadata are wrong, so I don't know when exactly I took them.",
+    "links":[
+        {
+            "type":"relative", 
+            "name":"Screenshot_13_wrongdate.webp", 
+            "link":"./Screenshot_13_wrongdate.webp"
+        },
+
+        {
+            "type":"relative", 
+            "name":"unknown (1) wrongdate.webp", 
+            "link":"./unknown (1) wrongdate.webp"
+        }
+    ],
+
+    "styling":{
+        "text_color":[255, 255, 255],
+        "column_border_color":[255, 255, 255, 1]
+    }
+}
