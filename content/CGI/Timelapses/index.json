@@ -1,0 +1,22 @@
+{
+    "about":"Sped up recordings I've taken while modeling or animating",
+    "description":"Here are some timelapses of recordings I've taken while modeling and animating",
+    "links":[
+        {
+            "type":"url", 
+            "name":"The Making of a 16-Second Animation (Sep 2025) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=WA_vi7YQiK0&t=98s"
+        },
+
+        {
+            "type":"url", 
+            "name":"Subpar Burger Timelapse (Jan 2023) (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=gDrDrglXtUc"
+        }
+    ],
+
+    "styling":{
+        "column_color":[10, 0, 0, 0.5],
+        "column_border_color":[255, 100, 100, 1]
+    }
+}

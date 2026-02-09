@@ -1,0 +1,14 @@
+{
+    "about":"3D Computer animations and renders",
+    "description":"My digital 3D works. So far all of them are made using Blender.",
+    "branches":[
+        "Animations",
+        "Renders",
+        "Timelapses"
+    ],
+
+    "styling":{
+        "column_color":[10, 0, 0, 0.5],
+        "column_border_color":[255, 100, 100, 1]
+    }
+}
