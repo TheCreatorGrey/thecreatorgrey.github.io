@@ -58,7 +58,7 @@
     ],
 
     "styling":{
-        "character":"/assets/characters/randy.png",
+        "character":"/assets/characters/larry.png",
         "column_color":[10, 0, 0, 0.5],
         "column_border_color":[255, 100, 100, 1]
     }

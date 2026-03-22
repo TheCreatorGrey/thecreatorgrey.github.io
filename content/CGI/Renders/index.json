@@ -1,7 +1,13 @@
 {
     "about":"Everything 3D but not animated",
-    "description":"Here are some renders of some of my models. There are only a couple examples here as most of my renders aren't here yet. This is a new section.",
+    "description":"Here are some renders of some of my models. There are only a couple examples here as most of my renders aren't here yet. This is a new section. Includes VFX renders.",
     "links":[
+        {
+            "type":"url", 
+            "name":"Randy (Mar 2026) (BlueSky)", 
+            "link":"https://bsky.app/profile/thecreatorgrey.com/post/3mhdqkcqi5s2v"
+        },
+
         {
             "type":"url", 
             "name":"Larry's Cheese (Nov 2025) (NewGrounds)", 
@@ -16,6 +22,7 @@
     ],
 
     "styling":{
+        "character":"/assets/characters/larry.png",
         "column_color":[10, 0, 0, 0.5],
         "column_border_color":[255, 100, 100, 1]
     }

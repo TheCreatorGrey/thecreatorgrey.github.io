@@ -1,0 +1,11 @@
+{
+    "about":"A simple non-AI speech synthesizer written in Python (2026)",
+    "description":"PieSynth is a simple speech synthesizer which uses pre-recorded voice samples (of my voice) to reproduce speech or other vocals. It's called PieSynth because it's written in Python. Pysynth probably already exists. A work in progress. \n\nStarted on 3/20/2026\nReleased on 3/20/2026",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to PieSynth Github repository", 
+            "link":"https://github.com/TheCreatorGrey/piesynth"
+        }
+    ]
+}

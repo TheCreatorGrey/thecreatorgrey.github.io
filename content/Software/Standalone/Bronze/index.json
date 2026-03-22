@@ -1,0 +1,11 @@
+{
+    "about":"A simple scripting language with a small interpreter written in C++ (2026)",
+    "description":"Bronze is based on the scripting language that was implemented in Kodiak, another project of mine. Its interpreter has been redone a few times because I was indecisive about what language to us. It was initially made in C, then in Rust, then in C again and finally C++. Technically I started the project in 2024, but a couple of years without any changes to the project passed before I decided to delete the original project and start over. Still a work in progress. \n\nStarted on 12/2/2024\nReleased on 3/18/2026",
+    "links":[
+        {
+            "type":"url", 
+            "name":"Go to Bronze Github repository", 
+            "link":"https://github.com/TheCreatorGrey/bronze"
+        }
+    ]
+}

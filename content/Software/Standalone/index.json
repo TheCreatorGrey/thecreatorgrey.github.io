@@ -1,0 +1,15 @@
+{
+    "about":"Anything that isn't written in JavaScript",
+    "description":"Standalone software that runs outside of a web browser. Most of the projects I worked on before I learned JavaScript, could have fallen under this category, but many of those were either not finished or lost. Most of these are written with languages other than JavaScript.",
+    "branches":[
+        "PieSynth",
+        "Bronze"
+    ],
+
+    "styling":{
+        "text_color":[200, 255, 200],
+        "bg_size":2000,
+        "background":"/assets/backgrounds/code.png",
+        "column_border_color":[0, 255, 0, 1]
+    }
+}

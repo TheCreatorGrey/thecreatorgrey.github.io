@@ -11,9 +11,12 @@ const children = document.getElementById("children");
 
 
 
-function applyStyling(styling) {
+async function applyStyling(styling) {
     if (styling.background) {
-        document.body.style.background = `url(${styling.background})`
+        let background_image = new Image();
+        background_image.src = styling.background;
+        await background_image.decode() // Waiting for the bg to decode like this prevents flickering
+        document.body.style.background = `url(${background_image.src})`
     }
     if (styling.bg_size) {
         document.body.style.backgroundSize = `${styling.bg_size}px`
