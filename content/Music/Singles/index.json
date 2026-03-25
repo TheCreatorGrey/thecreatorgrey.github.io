@@ -1,7 +1,19 @@
 {
     "about":"A collection of standalone tracks",
-    "description":"A collection of standalone tracks. For now there is only one.",
+    "description":"Standalone tracks. Satellite and Orbit were originally intended to be parts of a 3-track EP, but a third track was never made.",
     "links":[
+        {
+            "type":"url", 
+            "name":"Satellite (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=NJZOckSTA_c"
+        },
+
+        {
+            "type":"url", 
+            "name":"Orbit (YouTube)", 
+            "link":"https://www.youtube.com/watch?v=xLJGQ0cmEQo"
+        },
+
         {
             "type":"url", 
             "name":"Computation (Jun 2025) (YouTube)", 
