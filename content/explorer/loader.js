@@ -9,7 +9,7 @@ const back_button = document.getElementById("back_button");
 const description = document.getElementById("description");
 const children = document.getElementById("children");
 
-
+const params = new URLSearchParams(window.location.search);
 
 async function applyStyling(styling) {
     if (styling.background) {
@@ -77,16 +77,27 @@ function arrayToPath(arr) {
 // Path to current branch in array form
 var branch_loc = ["content"];
 
+// Navigate to branch if there is a nav parameter
+if (params.has("nav")) {
+    branch_loc = params.get("nav").split("|")
+}
+
+
 // Go back to parent/previous branch
-back_button.onclick = () => {
+function previousBranch() {
     if (1 < branch_loc.length) {
         branch_loc.pop();
-        index()
+        loadBranch()
+    } else {
+        // Go the homepage if at the beginning
+        window.location.href = "https://thecreatorgrey.com"
     }
 }
 
+back_button.onclick = previousBranch;
+
 // Load branch into explorer
-async function index() {
+async function loadBranch() {
     // Load path buttons
     path_buttons.innerHTML = "";
     for (let [i, branch] of branch_loc.entries()) {
@@ -96,13 +107,29 @@ async function index() {
 
         button.onclick = () => {
             branch_loc = branch_loc.slice(0, i+1);
-            index()
+            loadBranch()
         }
 
         path_buttons.appendChild(button);
     }
+    
+    
+    // Update nav parameter without reloading page
+    // This adds to the page history so the user can 
+    // use the arrows to navigate as if it was a 
+    // regular web page
+    // Also the url with the parameter can be copied
+    // and shared
+    window.history.pushState(null, null, `?nav=${branch_loc.join("|")}`);
+
+    // The browser's navigation arrows seem to do nothing when going back to a state added with pushState.
+    // This even is triggered when the arrows are pushed. This effectively overrides the default behavior
+    // of the navigation arrows to go the the parent branch regardless of whether the user has been there
+    // already or not.
+    addEventListener("popstate", previousBranch)
 
 
+    // Clear page
     children.innerHTML = "";
     description.innerText = "";
 
@@ -124,7 +151,7 @@ async function index() {
             link.href = "javascript:void(0)";
             link.onclick = () => { // Load the child branch
                 branch_loc.push(branch);
-                index()
+                loadBranch()
             }
             children.appendChild(link);
     
@@ -185,4 +212,4 @@ async function index() {
 
     applyStyling(styling)
 }
-index();
+loadBranch();

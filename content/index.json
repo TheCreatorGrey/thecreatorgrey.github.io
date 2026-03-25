@@ -1,6 +1,6 @@
 {
     "about":"Surely some day I can put something good here",
-    "description":"This is an index of my publicly accessible projects.The buttons below will take you to different categories and subcategories of projects. This is a single page which uses JavaScript to load content, so using your browser's arrows to navigate won't work. Use the path at the top of this page instead.",
+    "description":"This is an index of my publicly accessible projects. The buttons below will take you to different categories and subcategories.",
     "branches":[
         "Software",
         "CGI"
